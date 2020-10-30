@@ -1,18 +1,26 @@
 public class HelloWorld {
+    
     public static void main( String[] args ) {
+     
+        // 程序开始运行
         System.out.println("Hello World");
 
-        int varone = 190;
-        for ( var i = 0; i < 10; i ++ ) {
-            System.out.println(varone + i);
+        // 是否成功叠加
+
+        int energyCheck = 0;
+        for ( int i = 0; i < 10; i ++ ) {
+            energyCheck = energyCheck + 10;
+            System.out.println( "能量准备：" + energyCheck + " %");
         }
-      
-        long pasWord = 20020L;
-        System.out.println(pasWord);
+        
+        long pasWord = 8392820020L;
+        float paiDe = 3.14F;
+        System.out.println( "机器人编号：NO." + pasWord );
+        System.out.println( "轴心半径：" + paiDe + '米' );
 
         String popSay = "你的名字";
         int strLength = popSay.length();
-        long [] arrpopSay = { 1, 3, 0 }; 
+        long [] arrpopSay = { 1, 3, 192030 }; 
         if ( popSay == "名" ) {
             System.out.println(popSay + " " + strLength);
         } else {
