@@ -30,11 +30,13 @@ public class HelloWorld {
         }
 
         // java 计算时只有浮点数能够触发浮点数（小数计算）
-        float a1num = 5F; float a2num = 3F;
+        float a1num = 5F;
+        float a2num = 3F;
         System.out.println( a1num / a2num );
 
         // 字符 + 操作会转换为数字类型，顺序为 int → long → float → double
-        char st01 = '就'; char st02 = 'p';
+        char st01 = '就';
+        char st02 = 'p';
         System.out.println( st01 + 8 );
         System.out.println( st01 + st02 );
 
@@ -45,6 +47,8 @@ public class HelloWorld {
         // 字符串的拼接相对简单 ，字符串 + 操作单纯拼接（但要注意计算从左到右的先后顺序）。
         System.out.println( "字符" + 99 + 1 );  // 结果 ：字符991
         System.out.println( 99 + 1 + "字符" );  // 结果 ：100字符
+
+        // 赋值符号 = 、 += ，赋值时要注意数据类型 。
 
     }
 }
