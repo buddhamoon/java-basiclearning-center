@@ -50,5 +50,18 @@ public class HelloWorld {
 
         // 赋值符号 = 、 += ，赋值时要注意数据类型 。
 
+        float flva01 = 983F; float flva02 = 983f;
+        System.out.println( flva01 );
+        System.out.println( flva02 );
+
+        // 自增自减运算符
+
+        var num901 = 900; var num902 = 900;
+        System.out.println( num901 );
+        num901 ++;
+        System.out.println( num901 );
+        -- num901;
+        System.out.println( num901 );
+
     }
 }
