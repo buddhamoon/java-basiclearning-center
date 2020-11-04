@@ -63,5 +63,11 @@ public class HelloWorld {
         -- num901;
         System.out.println( num901 );
 
+        if ( num901 == 900 || num902 == 900) {
+            System.out.println( "满足条件" );
+        } else {
+            System.out.println( "不满足条件" );
+        }
+
     }
 }
