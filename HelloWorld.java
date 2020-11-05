@@ -69,5 +69,32 @@ public class HelloWorld {
             System.out.println( "不满足条件" );
         }
 
+        // 对浮点值进行转换赋值 ，可以保留其整数，截断其小数部分。
+        int someX = (int) 24.6;
+        System.out.println( someX );
+
+        int pastX = 1;
+        while ( pastX < 6 ) {
+            System.out.print( pastX );
+            pastX ++ ;
+        }
+
+        Say jjsay = new Say();
+        jjsay.mackdown();
+        jjsay.title = "我的名字叫红桃K";
+        System.out.println( jjsay.title );
+        System.out.println( jjsay );
+
+        MyDog oneDog = new MyDog();
+        System.out.println( oneDog.name );
     }
+    
+    static class Say {
+        String title;
+        void mackdown () {
+            System.out.println( "mackDown方法执行" );
+        }
+    }
+
+   
 }
