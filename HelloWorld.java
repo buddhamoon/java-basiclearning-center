@@ -1,5 +1,7 @@
+import java.util.Random;
+
 public class HelloWorld {
-    
+
     public static void main( String[] args ) {
      
         // 程序开始运行
