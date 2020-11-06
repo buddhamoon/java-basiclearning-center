@@ -87,6 +87,11 @@ public class HelloWorld {
 
         MyDog oneDog = new MyDog();
         System.out.println( oneDog.name );
+
+        // 使用 java 处理可能会产生浮点数的运算时，一定要注意这样的情况。
+        // 虽然混入了浮点数让最终的结果以浮点数呈现 ，但是由于计算过程中某些数据是 int ，在处理中出现截断了一些数据 ，计算结果准确度会出现问题。 
+        System.out.println( 10 / 3 + 1.00 );
+
     }
     
     static class Say {
