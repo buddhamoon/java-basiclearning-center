@@ -92,6 +92,15 @@ public class HelloWorld {
         // 虽然混入了浮点数让最终的结果以浮点数呈现 ，但是由于计算过程中某些数据是 int ，在处理中出现截断了一些数据 ，计算结果准确度会出现问题。 
         System.out.println( 10 / 3 + 1.00 );
 
+
+        // 水仙花循环
+        for ( int i = 100; i <= 999; i++ ) {
+            int one = i % 10;
+            int two = i / 10 % 10;
+            int three = i / 100;
+            if ( one*one*one + two*two*two + three*three*three == i) System.out.println( i );
+        };
+
     }
     
     static class Say {
